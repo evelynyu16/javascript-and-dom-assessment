@@ -6,6 +6,7 @@ An interactive Airbnb listings explorer for San Francisco, built with vanilla Ja
 
 > **[View on GitHub Pages →](https://YOUR_USERNAME.github.io/airbnb-listings/)**
 
+https://evelynyu16.github.io/javascript-and-dom-assessment/assessment/
 ---
 
 ## ✅ Requirements Checklist
@@ -69,8 +70,4 @@ An interactive Airbnb listings explorer for San Francisco, built with vanilla Ja
 
 ---
 
-## 🌐 Deploy to GitHub Pages
 
-1. Push all files to a GitHub repo
-2. Go to **Settings → Pages → Deploy from branch → main → / (root)**
-3. Update the Live Demo link above with your Pages URL
