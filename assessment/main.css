@@ -1,0 +1,234 @@
+/* ── Typography ─────────────────────────────────────── */
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #faf8f4;
+  color: #2a2420;
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'Playfair Display', serif;
+}
+
+/* ── Hero ───────────────────────────────────────────── */
+.hero-section h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.hero-section .lead {
+  color: #6b5c52;
+}
+
+/* ── Listing Card ───────────────────────────────────── */
+.listing.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+  overflow: hidden;
+  height: 100%;
+}
+.listing.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.14);
+}
+
+/* ── Card image ─────────────────────────────────────── */
+.listing.card .card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ── Card badges ────────────────────────────────────── */
+.card-img-wrap {
+  position: relative;
+}
+.badge-room-type {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #2a2420;
+  color: #faf8f4;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 100px;
+}
+.badge-superhost {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #d4a24c;
+  color: #2a2420;
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 100px;
+}
+
+/* ── Card body ──────────────────────────────────────── */
+.card-neighborhood {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #c4593a;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+.card-meta {
+  font-size: 0.78rem;
+  color: #6b5c52;
+  margin-bottom: 6px;
+}
+.card-rating {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #2a2420;
+  margin-bottom: 6px;
+}
+.card-rating .reviews {
+  font-weight: 300;
+  color: #b8a89a;
+}
+.card-description {
+  font-size: 0.8rem;
+  color: #6b5c52;
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+/* ── Amenities pills ────────────────────────────────── */
+.amenities-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.amenity-pill {
+  background: #f5efe6;
+  color: #6b5c52;
+  font-size: 0.68rem;
+  padding: 3px 9px;
+  border-radius: 100px;
+  border: 1px solid rgba(42,36,32,0.08);
+}
+
+/* ── Card footer ────────────────────────────────────── */
+.card-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(42,36,32,0.08);
+  padding-top: 10px;
+  margin-top: auto;
+}
+.host-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.host-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f5efe6;
+}
+.host-name {
+  font-size: 0.78rem;
+  color: #6b5c52;
+  line-height: 1.3;
+}
+.host-name strong {
+  display: block;
+  font-size: 0.82rem;
+  color: #2a2420;
+}
+.price-block {
+  text-align: right;
+}
+.price-amount {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2a2420;
+}
+.price-label {
+  font-size: 0.7rem;
+  color: #b8a89a;
+  display: block;
+}
+
+/* ── Modal ──────────────────────────────────────────── */
+.modal-listing-img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.modal-host-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f5efe6;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.modal-host-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.modal-amenity-pill {
+  display: inline-block;
+  background: #f5efe6;
+  border: 1px solid rgba(42,36,32,0.1);
+  color: #2a2420;
+  font-size: 0.78rem;
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin: 3px;
+}
+
+/* ── Controls ───────────────────────────────────────── */
+.btn-group .btn.active {
+  background-color: #2a2420;
+  color: white;
+  border-color: #2a2420;
+}
+
+/* ── Loading / empty ────────────────────────────────── */
+.spinner-border { width: 3rem; height: 3rem; }
+#listings .empty-msg {
+  padding: 4rem;
+  text-align: center;
+  color: #6b5c52;
+}
+
+/* ── Fade-in animation ──────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.listing-col {
+  animation: fadeUp 0.35s ease both;
+}
